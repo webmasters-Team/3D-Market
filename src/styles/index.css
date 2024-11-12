@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html,
+  body,
+  #__next {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  select {
+    color: initial;
+  }
+}
+
+a {
+  @apply text-indigo-700;
+}
+
+.progress {
+  box-shadow: none;
+}
+
+.portal-ref > div {
+  transform: none !important;
+}
+
+.chrome-picker {
+  box-shadow: none !important;
+  @apply bg-gray-100 border border-gray-200 rounded-md !important;
+}
+body .ant-select.ant-select-single.ant-select-show-arrow .ant-select-selector {
+  @apply border-gray-300 hover:outline-none hover:ring-indigo-500 hover:border-indigo-500 sm:text-sm rounded-md;
+  transition: none;
+  height: 38px;
+}
+
+body .ant-select {
+  @apply mt-1 block w-full text-base;
+}
